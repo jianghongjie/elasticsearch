@@ -1,0 +1,43 @@
+{
+	"group":{
+	  "_all":{
+	    	"enabled":false
+	    },
+		"properties":{
+			"bizId":{
+				"type":"string",
+				"store":"yes",
+				"index":"no"
+			},
+			"name":{
+				"type":"string",
+				"store":"no",
+				"index":"analyzed",
+				"analyzer":"ik_smart"
+			},			
+			"expertise":{
+				"properties":{
+					"diseaseName":{
+						"type":"string",
+						"store":"no",
+						"index":"analyzed",
+						"analyzer":"ik_max_word"
+					},
+					"diseaseAlias":{
+						"type":"string",
+						"store":"no",
+						"index":"analyzed",
+						"analyzer":"ik_max_word"
+					},
+					"diseaseRemark":{
+						"type":"string",
+						"store":"no",
+						"index":"analyzed",
+						"analyzer":"ik_max_word"
+					}
+				}          
+			}
+		}
+	}
+}
+

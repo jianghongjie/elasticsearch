@@ -1,0 +1,33 @@
+{
+	"disease":{
+	  "_all":{
+	    	"enabled":false
+	    },
+		"properties":{
+			"bizId":{
+				"type":"string",
+				"store":"yes",
+				"index":"no"
+			},
+			"diseaseName":{
+				"type":"string",
+				"store":"no",
+				"index":"analyzed",
+				"analyzer":"ik_max_word"
+			},
+			"diseaseAlias":{
+				"type":"string",
+				"store":"no",
+				"index":"analyzed",
+				"analyzer":"ik_max_word"
+			},
+			"diseaseRemark":{
+				"type":"string",
+				"store":"no",
+				"index":"analyzed",
+				"analyzer":"ik_max_word"
+			}
+		}
+	}
+}
+
