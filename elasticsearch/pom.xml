@@ -29,23 +29,6 @@
         </profile>
     </profiles>
 
-    <!-- <repositories>
-        <repository>
-            <id>${deploy.env}</id>
-            <url>http://192.168.3.7:9527/nexus/content/repositories/${deploy.env}</url>
-        </repository>
-        <repository>
-            <id>nexus-inner</id>
-            <url>http://192.168.3.7:9527/nexus/content/groups/public/</url>
-        </repository>
-    </repositories>
-    <distributionManagement>
-        <repository>
-            <id>${deploy.env}</id>
-            <url>http://192.168.3.7:9527/nexus/content/repositories/${deploy.env}</url>
-        </repository>
-    </distributionManagement> -->
-
 	<dependencies>
 		<dependency>
 			<groupId>com.alibaba</groupId>
